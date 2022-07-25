@@ -1,0 +1,41 @@
+.sidebarOption {
+    display: flex;
+    align-items: center;   
+    color: gray;
+    height: 40px;
+    cursor: pointer;
+    transition: 200ms color ease-in;
+    margin-bottom: 12px;
+}
+
+.sidebar > hr {
+    border: 1px solid #282828;
+    width: 90%;
+    margin: 10px;
+}
+
+.sidebarOption:hover {
+    color: white;
+}
+
+.sidebarOption__icon {    
+    padding-left: 10px;
+    padding-right: 16px;    
+}
+
+.sidebarOption > p {
+    margin-top: 2px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.sidebarOption h4 {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.sidebarOption .MuiSvgIcon-root {
+    font-size: 1.7rem;
+}
+
+

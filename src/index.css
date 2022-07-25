@@ -1,13 +1,110 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body::-webkit-scrollbar {
+  display: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.primary-button {
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #fff;
+  background-color: black;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+}
+
+.primary-button:hover {
+  transition: transform 0.4s ease-in-out;
+  transform: scale(1.1) !important; 
+}
+
+body {
+  text-align: center;
+}
+
+/* -----  Nav bar ------ */
+
+nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+}
+
+nav .logo-container {
+  width: 170px;
+  margin: 15px;
+  background-color: black;
+}
+
+nav .logo-container .logo {
+  width: 100%;
+}
+
+nav .nav-button{
+  border: 0px;
+  outline: 0px;
+  background-color: black;
+  color: white;
+  margin-right: 50px;
+  font-weight: 600;
+  font-size: inherit;
+}
+
+nav .nav-button:hover{
+  cursor: pointer;
+  color: #1ed760;
+}
+
+
+
+/* -----  Home page ------ */
+
+.overlay h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 150px;
+  color: #1ed760;  
+}
+
+.home { 
+  padding-top: 15%;
+}
+
+.home p {
+  color: #1ed760;
+  font-weight: 600;
+}
+
+.home .primary-button {  
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  font-weight: 700;
+  font-size: inherit;
+  color: rgb(41, 65, 171) ;
+  background-color: #1ed760;
+  margin-top: 30px;  
+}
+
+.home .primary-button:hover {  
+  cursor: pointer;  
+}
+
+.home a{
+  text-decoration: none;
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;  
+  background-color: rgb(41, 65, 171);
 }
